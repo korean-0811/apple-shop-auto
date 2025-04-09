@@ -1,53 +1,97 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
 }
-.hero {
-    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-    height: 100vh;
-    position: relative;
-    color: white;
+
+header {
+  background: linear-gradient(135deg, #000, #333);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
 }
-.overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
-.cta-button {
-    background-color: #00b894;
-    padding: 12px 25px;
-    margin-top: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
-.features {
-    padding: 50px 20px;
-    text-align: center;
+
+.btn {
+  background: #0071e3;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
 }
-.features h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+
+.btn:hover {
+  background: #005bb5;
 }
-.features ul {
-    list-style: none;
+
+.product-section {
+  padding: 60px 20px;
+  text-align: center;
 }
-.features li {
-    margin-bottom: 10px;
+
+.product-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-card span {
+  font-weight: bold;
+  color: #000;
+}
+
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #f1f1f1;
+  background: #1d1d1f;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }
